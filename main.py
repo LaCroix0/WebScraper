@@ -6,7 +6,6 @@ def sort_by_votes(hnlist):
     sorted_list = sorted(hnlist, key= lambda k: k['votes'], reverse=True)
     return sorted_list[:-5]
 
-
 def create_custom_hn(pages):
     hn = []
     for page in range(pages + 1):
@@ -28,5 +27,3 @@ def create_custom_hn(pages):
 
 lista = create_custom_hn(2)
 print(sort_by_votes(lista))
-# print(sort_by_votes(lista))
-# print(links)
